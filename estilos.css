@@ -1,0 +1,178 @@
+/* Estilos generales */
+.centrar{
+    text-align: center;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff5f7;
+}
+
+/* Encabezado mejorado */
+.title-header {
+    background: linear-gradient(135deg, #ff69b4, #ff8fab);
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Contenedor principal */
+.main-container {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Carrusel optimizado */
+.carousel-container {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 60vh;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(214, 41, 119, 0.7);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    max-width: 80%;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Mensaje especial */
+.special-message {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    max-width: 600px;
+}
+
+.special-message h2 {
+    color: #ff69b4;
+    margin-bottom: 1rem;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    background-color: #fff5f7;
+    border-top: 1px solid #ffd6e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content h1 {
+        font-size: 1.8rem;
+        padding: 0.5rem;
+        white-space: normal;
+        line-height: 1.3;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        animation: none;
+        transition: all 0.3s ease;
+        will-change: transform;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        -webkit-font-smoothing: subpixel-antialiased;
+        image-rendering: optimizeQuality;
+        shape-rendering: geometricPrecision;
+        text-rendering: optimizeLegibility;
+        font-smooth: always;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+    }
+
+    .carousel-caption {
+        padding: 0.3rem 0.5rem;
+        bottom: 10px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+}
